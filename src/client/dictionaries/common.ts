@@ -1,0 +1,49 @@
+/**
+ * Russian dictionary for the `common` namespace owned by
+ * `@deepseek-ai/dsh-client-locale`. Key parity is asserted by
+ * tests/dictionaries.client.spec.ts.
+ */
+
+/** Registered namespace id. */
+export const ns = 'common'
+
+/** Russian dictionary. */
+export const dict: Record<string, string> = {
+  'ok': 'OK',
+  'cancel': 'Отмена',
+  'close': 'Закрыть',
+  'copy': 'Копировать',
+  'copied': 'Скопировано',
+  'copy.failed': 'Не удалось скопировать',
+  'copy.value': 'Копировать значение',
+  'copy.json': 'Копировать JSON',
+  'copy.path': 'Копировать путь свойства',
+  'copy.prettyJson': 'Копировать форматированный JSON',
+  'copy.compactJson': 'Копировать компактный JSON',
+  'copy.optionsHint': '{action}; правый клик — выбор способа копирования',
+  'retry': 'Повторить',
+  'loading': 'Загрузка…',
+  'load.failed': 'Не удалось загрузить',
+  'submit': 'Отправить',
+  'submitting': 'Отправка…',
+  'next': 'Далее',
+  'previous': 'Назад',
+  'skip': 'Пропустить',
+  'delete': 'Удалить',
+  'edit': 'Изменить',
+  'save': 'Сохранить',
+  'search': 'Поиск',
+  'more': 'Ещё',
+  'collapse': 'Свернуть',
+  'expand': 'Развернуть',
+  'back': 'Назад',
+  'brand.localBuild': 'Локальная сборка DSH',
+  'unknown': 'Неизвестно',
+  'none': 'Нет',
+  'truncated': 'Усечено',
+  'json.label': 'JSON',
+  'markdown.footnotes': 'Сноски',
+  'markdown.truncatedCharacters': '… усечено, всего {total} символов',
+  'number.thousand': '{value}K',
+  'number.million': '{value}M',
+}
