@@ -24,7 +24,9 @@ const client = await build({
   legalComments: 'none',
   write: false,
 })
-const body = client.outputFiles[0].text.trimEnd().split('\n')
+const lines = client.outputFiles[0].text.trimEnd().split('\n')
+if (lines[0]?.trim() === '"use strict";') lines.shift()
+const body = lines
   .map(line => line.length === 0 ? '' : `    ${line}`)
   .join('\n')
 const output = `window.__ModuleLoader__.load({

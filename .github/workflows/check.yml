@@ -31,7 +31,7 @@ jobs:
       - name: Read compatible Harness revision
         id: harness
         shell: bash
-        run: echo "ref=$(node -p \"require('./harness-compatibility.json').ref\")" >> "$GITHUB_OUTPUT"
+        run: echo "ref=$(jq -r .ref harness-compatibility.json)" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v4
         with:
           repository: deepseek-ai/deepseek-harness
