@@ -33,6 +33,9 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "node scripts/test.mjs",
+    "check:harness:keys": "node scripts/check-harness-keys.mjs",
+    "check:harness:install": "node scripts/smoke-install.mjs",
+    "check:harness": "npm run build && npm run check:harness:keys && npm run check:harness:install",
     "check": "npm run build && npm test && npm pack --dry-run",
     "prepack": "npm run build"
   },
