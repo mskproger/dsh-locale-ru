@@ -17,6 +17,7 @@ export const dict: Record<string, string> = {
   'wrap.enable': 'Включить перенос строк',
   'wrap.disable': 'Выключить перенос строк',
   'wrap.aria': 'Перенос строк',
+  'autoRefresh': 'Автообновление',
   'autoRefresh.enable': 'Включить автообновление',
   'autoRefresh.disable': 'Выключить автообновление',
   openWith: 'Открыть в',

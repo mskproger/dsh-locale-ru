@@ -29,6 +29,7 @@ import * as documentPreview from './dictionaries/document-preview.ts'
 import * as goal from './dictionaries/goal.ts'
 import * as inputTrigger from './dictionaries/input-trigger.ts'
 import * as jobs from './dictionaries/jobs.ts'
+import * as locale from './dictionaries/locale.ts'
 import * as messageFeedback from './dictionaries/message-feedback.ts'
 import * as modelSelection from './dictionaries/model-selection.ts'
 import * as openInApp from './dictionaries/open-in-app.ts'
@@ -40,15 +41,24 @@ import * as reference from './dictionaries/reference.ts'
 import * as schedule from './dictionaries/schedule.ts'
 import * as scheduleManager from './dictionaries/schedule-manager.ts'
 import * as sessionLogDownload from './dictionaries/session-log-download.ts'
+import * as settingsAccount from './dictionaries/settings-account.ts'
+import * as settingsAgentLoop from './dictionaries/settings-agent-loop.ts'
 import * as settingsArchivedSessions from './dictionaries/settings-archived-sessions.ts'
 import * as settingsGeneral from './dictionaries/settings-general.ts'
 import * as settingsLocale from './dictionaries/settings-locale.ts'
 import * as settingsModels from './dictionaries/settings-models.ts'
 import * as settingsPluginInventory from './dictionaries/settings-plugin-inventory.ts'
 import * as settingsPlugins from './dictionaries/settings-plugins.ts'
+import * as settingsSessionLog from './dictionaries/settings-session-log.ts'
+import * as settingsShell from './dictionaries/settings-shell.ts'
+import * as settingsSubagent from './dictionaries/settings-subagent.ts'
 import * as settingsTheme from './dictionaries/settings-theme.ts'
+import * as settingsWebSearch from './dictionaries/settings-web-search.ts'
+import * as shortcuts from './dictionaries/shortcuts.ts'
+import * as shortcutsLayout from './dictionaries/shortcuts-layout.ts'
 import * as sidebar from './dictionaries/sidebar.ts'
 import * as sidebarBrowser from './dictionaries/sidebar-browser.ts'
+import * as sidebarExcel from './dictionaries/sidebar-excel.ts'
 import * as sidebarFiles from './dictionaries/sidebar-files.ts'
 import * as sidebarRight from './dictionaries/sidebar-right.ts'
 import * as sidebarTerminal from './dictionaries/sidebar-terminal.ts'
@@ -92,6 +102,7 @@ const PACKS: readonly Pack[] = [
   directoryBrowser,
   goal,
   jobs,
+  locale,
   messageFeedback,
   modelSelection,
   openInApp,
@@ -101,10 +112,19 @@ const PACKS: readonly Pack[] = [
   schedule,
   scheduleManager,
   sessionLogDownload,
+  settingsAccount,
+  settingsAgentLoop,
+  settingsSessionLog,
+  settingsShell,
+  settingsSubagent,
+  settingsWebSearch,
+  shortcuts,
+  shortcutsLayout,
   sidebar,
   sidebarRight,
   sidebarFiles,
   sidebarBrowser,
+  sidebarExcel,
   sidebarTerminal,
   documentPreview,
   documentCode,

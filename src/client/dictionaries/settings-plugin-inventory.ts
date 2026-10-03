@@ -48,4 +48,5 @@ export const dict: Record<string, string> = {
   active: 'Работает',
   failed: 'Ошибка запуска',
   unloading: 'Выгрузка',
+  metadataError: 'Ошибка метаданных пакета: {error}',
 }

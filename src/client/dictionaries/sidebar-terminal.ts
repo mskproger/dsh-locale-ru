@@ -17,6 +17,7 @@ export const dict: Record<string, string> = {
   description: 'Запуск команд в рабочей области сессии',
   title: 'Терминал',
   new: 'Создать терминал',
+  'shortcut.noSession': 'Сначала выберите сессию',
   loading: 'Чтение окружения терминала…',
   creating: 'Запуск…',
   connecting: 'Подключение…',

@@ -41,13 +41,13 @@ const ctx = {
 plugin.apply(ctx)
 
 assert.deepEqual(language, { id: 'ru', label: 'Русский', fallback: 'en' })
-assert.equal(dictionaries.size, 50)
+assert.equal(dictionaries.size, 60)
 assert.equal(dictionaries.get('settings')?.title, 'Настройки')
 assert.equal(dictionaries.get('chat')?.['message.turnProcess.toolCalls.few'], '{count} вызова инструмента')
 assert.equal(dictionaries.get('chat')?.['message.turnProcess.toolCalls.many'], '{count} вызовов инструментов')
 
 effectDisposer()
-assert.equal(disposed.length, 51)
+assert.equal(disposed.length, 61)
 
 const host = await import('../lib/index.js')
 assert.equal(typeof host.apply, 'function')

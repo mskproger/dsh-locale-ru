@@ -12,6 +12,9 @@ export const ns = 'agent-team'
 /** Russian dictionary. */
 export const dict: Record<string, string> = {
   'trigger': 'Команда агентов',
+  'current': 'Текущий диалог',
+  'failure': 'Некорректная сохранённая запись команды: {message}',
+  'unavailable': 'Команда недоступна',
   'refresh': 'Обновить данные команды',
   'close': 'Закрыть',
   'loading': 'Загрузка команды…',

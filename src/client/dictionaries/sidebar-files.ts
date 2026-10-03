@@ -12,6 +12,7 @@ export const dict: Record<string, string> = {
   'type.label': 'Файлы',
   'guide.title': 'Файлы рабочей области',
   'guide.description': 'Просмотр файлов рабочей области этой сессии',
+  'autoRefresh': 'Автообновление',
   'autoRefresh.enable': 'Включить автообновление',
   'autoRefresh.disable': 'Выключить автообновление',
   loading: 'Чтение…',
