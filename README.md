@@ -2,8 +2,13 @@
 
 ### Нативная русская локализация веб-интерфейса DeepSeek Harness
 
+> **Форк mskproger/dsh-locale-ru.** Обновлён под DeepSeek Harness **0.2.0-rc.2**: добавлены недостающие
+> ключи всех 50 словарей (включая статусы работы агента `message.stepProcess.*` — «Чтение файлов»,
+> «Запись файлов» и т.д.) и два новых словаря — `schedule.manager` и `voice-input`.
+> Основан на [AbsoluteMikhail/dsh-locale-ru](https://github.com/AbsoluteMikhail/dsh-locale-ru) (MIT).
+
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![DeepSeek Harness](https://img.shields.io/badge/DeepSeek_Harness-0.1.6--alpha.2-blue)](https://github.com/deepseek-ai/deepseek-harness)
+[![DeepSeek Harness](https://img.shields.io/badge/DeepSeek_Harness-0.2.0--rc.2-blue)](https://github.com/deepseek-ai/deepseek-harness)
 [![Check](https://github.com/AbsoluteMikhail/dsh-locale-ru/actions/workflows/check.yml/badge.svg)](https://github.com/AbsoluteMikhail/dsh-locale-ru/actions/workflows/check.yml)
 
 [English](README.en.md)
@@ -14,7 +19,7 @@
 
 ## Возможности
 
-- 48 пространств перевода и более 1600 строк интерфейса.
+- 50 пространств перевода и более 2300 строк интерфейса.
 - Чат, настройки, рабочие области, плагины, разрешения, терминал, файлы, планы, задания, субагенты и служебные панели.
 - Мгновенное переключение языка через **Настройки → Общие настройки → Язык**.
 - Сохранение выбранного языка в штатных настройках профиля.
@@ -103,7 +108,7 @@ dsh --profile web --dump-config
 
 ## Совместимость
 
-Первая версия подготовлена для DeepSeek Harness `0.1.6-alpha.2` и использует публичные методы `addLanguage` и `register`. Словари соответствуют интерфейсным ключам этой версии Harness.
+Первая версия подготовлена для DeepSeek Harness `0.1.6-alpha.2`; этот форк обновлён под `0.2.0-rc.2` и использует публичные методы `addLanguage` и `register`. Словари соответствуют интерфейсным ключам этой версии Harness.
 
 Расширенные категории `.few` и `.many` требуют версии `LocaleRuntime` с поддержкой CLDR. На более ранних версиях остальные переводы работают через стандартные ключи `.one` и `.other`.
 

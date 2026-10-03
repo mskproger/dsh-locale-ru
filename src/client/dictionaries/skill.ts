@@ -14,6 +14,7 @@ export const dict: Record<string, string> = {
   'row.failed': 'Не удалось загрузить навык',
   'row.stopped': 'Загрузка навыка остановлена',
   'row.instructions': 'Инструкции',
+  'row.preparing': 'Подготовка к загрузке навыка',
   'row.inspect': 'Просмотр',
   'menu.userOnly': 'только для пользователя',
 }

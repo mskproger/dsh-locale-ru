@@ -11,6 +11,7 @@ export const ns = 'session-log-download'
 export const dict: Record<string, string> = {
   'header.more': 'Другие действия',
   'menu.download': 'Скачать журнал сессии',
+  'menu.feedback': 'Обратная связь',
   'dialog.preparingTitle': 'Экспорт сессии',
   'dialog.preparingDescription': 'Подготовка ZIP-файла с текущей сессией, её подсессиями и вложениями.',
   'dialog.successTitle': 'Скачивание сессии началось',

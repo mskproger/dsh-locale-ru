@@ -38,6 +38,9 @@ export const dict: Record<string, string> = {
   'expand': 'Развернуть',
   'back': 'Назад',
   'brand.localBuild': 'Локальная сборка DSH',
+  'codeBlock.title': 'Блок кода',
+  'codeBlock.wrap': 'Переносить строки',
+  'codeBlock.unwrap': 'Не переносить строки',
   'unknown': 'Неизвестно',
   'none': 'Нет',
   'truncated': 'Усечено',
@@ -46,4 +49,5 @@ export const dict: Record<string, string> = {
   'markdown.truncatedCharacters': '… усечено, всего {total} символов',
   'number.thousand': '{value}K',
   'number.million': '{value}M',
+  'workspace.defaultName': 'Рабочая область по умолчанию',
 }

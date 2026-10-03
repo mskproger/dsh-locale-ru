@@ -7,7 +7,6 @@ export const NAMESPACES = [
   { slug: 'settings-models', ns: 'settings.models', owner: '@deepseek-ai/dsh-client-ui-settings-models/src/client/locales.ts', keyExport: 'en' },
   { slug: 'settings-plugins', ns: 'settings.plugins', owner: '@deepseek-ai/dsh-client-ui-settings-plugins/src/client/locales.ts', keyExport: 'en' },
   { slug: 'settings-plugin-inventory', ns: 'settings.pluginInventory', owner: '@deepseek-ai/dsh-client-ui-settings-plugin-inventory/src/client/locales.ts', keyExport: 'zh' },
-  { slug: 'settings-archived-sessions', ns: 'settings.archivedSessions', owner: '@deepseek-ai/dsh-client-ui-settings-unarchive-sessions/src/client/locales.ts', keyExport: 'zh' },
   { slug: 'agent-preset', ns: 'settings.agentPreset', owner: '@deepseek-ai/dsh-client-ui-agent-preset/src/client/locales.ts', keyExport: 'zh' },
   { slug: 'agent-team', ns: 'agent-team', owner: '@deepseek-ai/dsh-experimental-client-ui-agent-team/src/client/locales.ts', keyExport: 'zh' },
   { slug: 'permission-settings', ns: 'settings.permission', owner: '@deepseek-ai/dsh-client-ui-permission-presets/src/client/locales.ts', keyExport: 'zh' },
@@ -29,6 +28,7 @@ export const NAMESPACES = [
   { slug: 'plugin-manager', ns: 'pluginManager', owner: '@deepseek-ai/dsh-client-ui-plugin-manager/src/client/locales.ts', keyExport: 'zh' },
   { slug: 'reference', ns: 'reference', owner: '@deepseek-ai/dsh-client-ui-reference/src/client/locales.ts', keyExport: 'zh' },
   { slug: 'schedule', ns: 'schedule.catalog', owner: '@deepseek-ai/dsh-client-ui-schedule/src/client/locales.ts', keyExport: 'zh' },
+  { slug: 'schedule-manager', ns: 'schedule.manager', owner: '@deepseek-ai/dsh-client-ui-schedule/src/client/task-manager-locales.ts', keyExport: 'en' },
   { slug: 'session-log-download', ns: 'session-log-download', owner: '@deepseek-ai/dsh-session-log-export/src/client/locales.ts', keyExport: 'zh' },
   { slug: 'sidebar', ns: 'sidebar', owner: '@deepseek-ai/dsh-client-ui-sidebar/src/client/locales.ts', keyExport: 'zh' },
   { slug: 'sidebar-right', ns: 'sidebarRight', owner: '@deepseek-ai/dsh-client-ui-sidebar-right/src/client/locales.ts', keyExport: 'zh' },
@@ -48,6 +48,7 @@ export const NAMESPACES = [
   { slug: 'user-questions', ns: 'question', owner: '@deepseek-ai/dsh-client-ui-user-questions/src/client/locales.ts', keyExport: 'zh' },
   { slug: 'workflow-run', ns: 'workflowRun', owner: '@deepseek-ai/dsh-client-ui-workflow-run/src/client/locales.ts', keyExport: 'zh' },
   { slug: 'workspace', ns: 'workspace', owner: '@deepseek-ai/dsh-client-ui-workspace/src/client/locales.ts', keyExport: 'zh' },
+  { slug: 'voice-input', ns: 'voice-input', owner: '@deepseek-ai/dsh-experimental-client-ui-voice-input/src/client/locales.ts', keyExport: 'zh' },
 ]
 
 /** Keys registered inline by the directory-browser owner. */

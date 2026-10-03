@@ -38,6 +38,7 @@ import * as plan from './dictionaries/plan.ts'
 import * as pluginManager from './dictionaries/plugin-manager.ts'
 import * as reference from './dictionaries/reference.ts'
 import * as schedule from './dictionaries/schedule.ts'
+import * as scheduleManager from './dictionaries/schedule-manager.ts'
 import * as sessionLogDownload from './dictionaries/session-log-download.ts'
 import * as settingsArchivedSessions from './dictionaries/settings-archived-sessions.ts'
 import * as settingsGeneral from './dictionaries/settings-general.ts'
@@ -57,6 +58,7 @@ import * as trajectory from './dictionaries/trajectory.ts'
 import * as userQuestions from './dictionaries/user-questions.ts'
 import * as workflowRun from './dictionaries/workflow-run.ts'
 import * as workspace from './dictionaries/workspace.ts'
+import * as voiceInput from './dictionaries/voice-input.ts'
 
 /** One shipped dictionary contribution: namespace id plus ru entries. */
 interface Pack {
@@ -97,6 +99,7 @@ const PACKS: readonly Pack[] = [
   pluginManager,
   reference,
   schedule,
+  scheduleManager,
   sessionLogDownload,
   sidebar,
   sidebarRight,
@@ -116,6 +119,7 @@ const PACKS: readonly Pack[] = [
   userQuestions,
   workflowRun,
   workspace,
+  voiceInput,
 ]
 
 /** Stable id and selector label of the language this pack adds. */

@@ -196,5 +196,13 @@ export const dict: Record<string, string> = {
   'layout.systemPromptUpdated': 'Системный промпт обновлён',
   'layout.toolsUpdated': 'Инструменты обновлены',
   'layout.systemPromptAndToolsUpdated': 'Системный промпт и инструменты обновлены',
+  'layout.toolAdded': 'Инструмент добавлен: {name}',
+  'layout.toolRemoved': 'Инструмент удалён: {name}',
+  'layout.toolUpdateNotice': 'Инструменты обновлены',
+  'layout.toolsAdded': 'Добавлено: {names}',
+  'layout.toolsAddedCount': 'Добавлено: {count}',
+  'layout.toolsChanged': 'Добавлено: {added}, удалено: {removed}',
+  'layout.toolsRemoved': 'Удалено: {names}',
+  'layout.toolsRemovedCount': 'Удалено: {count}',
   'layout.compactionInterrupted': 'Сжатие контекста было прервано до завершения.',
 }

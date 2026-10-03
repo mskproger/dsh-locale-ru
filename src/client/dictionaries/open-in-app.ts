@@ -57,4 +57,13 @@ export const dict: Record<string, string> = {
   'app.explorer': 'Проводник',
   'app.filemanager': 'Файловый менеджер',
   'app.terminal': 'Терминал',
+  'path.appDefault': '{app} (по умолчанию)',
+  'path.appsError': 'Не удалось загрузить список приложений',
+  'path.more': 'Другие способы открытия',
+  'path.open': 'Открыть',
+  'path.openError': 'Не удалось открыть. Попробуйте ещё раз.',
+  'path.reveal': 'Показать расположение файла',
+  'path.revealError': 'Не удалось показать расположение файла. Попробуйте ещё раз.',
+  'shortcut.busy': 'Открытие рабочей области',
+  'shortcut.unavailable': 'Текущая рабочая область или локальное приложение недоступны',
 }

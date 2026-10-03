@@ -46,4 +46,6 @@ export const dict: Record<string, string> = {
   'status.pending': 'Ожидает',
   'status.in_progress': 'В работе',
   'status.completed': 'Завершена',
+  'task.expand': 'Развернуть',
+  'task.collapse': 'Свернуть',
 }

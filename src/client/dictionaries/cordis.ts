@@ -51,6 +51,7 @@ export const dict: Record<string, string> = {
   'render.failedAbdicated': 'Ошибка отрисовки в {slot}; восстановлен стандартный интерфейс:',
   'render.failedHeld': 'Ошибка отрисовки в {slot}:',
   'a11y.defining': 'Определение плагина',
+  'a11y.preparing': 'Подготовка вызова инструмента Cordis',
   'a11y.failed': 'Ошибка определения',
   'a11y.stopped': 'Определение прервано',
   'body.source': 'Код плагина',

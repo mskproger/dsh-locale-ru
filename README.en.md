@@ -3,10 +3,15 @@
 ### Native Russian localization for the DeepSeek Harness web interface
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![DeepSeek Harness](https://img.shields.io/badge/DeepSeek_Harness-0.1.6--alpha.2-blue)](https://github.com/deepseek-ai/deepseek-harness)
+[![DeepSeek Harness](https://img.shields.io/badge/DeepSeek_Harness-0.2.0--rc.2-blue)](https://github.com/deepseek-ai/deepseek-harness)
 [![Check](https://github.com/AbsoluteMikhail/dsh-locale-ru/actions/workflows/check.yml/badge.svg)](https://github.com/AbsoluteMikhail/dsh-locale-ru/actions/workflows/check.yml)
 
 [Русский](README.md)
+
+> **mskproger/dsh-locale-ru fork**, updated for DeepSeek Harness **0.2.0-rc.2**: all 50 dictionaries
+> completed (including the agent activity statuses `message.stepProcess.*`) and two new
+> dictionaries added — `schedule.manager` and `voice-input`. Based on
+> [AbsoluteMikhail/dsh-locale-ru](https://github.com/AbsoluteMikhail/dsh-locale-ru) (MIT).
 
 `dsh-locale-ru` adds **Русский** to the built-in DeepSeek Harness language selector and translates the main web interface surfaces. It uses the public locale-pack API without replacing application internals or rewriting the rendered DOM.
 
@@ -14,7 +19,7 @@
 
 ## Features
 
-- 48 translation namespaces and more than 1,600 interface strings.
+- 50 translation namespaces and more than 2,300 interface strings.
 - Coverage for chat, settings, workspaces, plugins, permissions, terminal, files, plans, jobs, subagents, and utility panels.
 - Immediate switching through **Settings → General settings → Language**.
 - Persistence through the standard profile settings.
@@ -67,7 +72,7 @@ The assembled configuration should contain:
 
 ## Compatibility
 
-The first release targets DeepSeek Harness `0.1.6-alpha.2` and uses the public `addLanguage` and `register` methods. Its dictionaries match the interface keys in that Harness version.
+The first release targets DeepSeek Harness `0.1.6-alpha.2`; this fork is updated for `0.2.0-rc.2` and uses the public `addLanguage` and `register` methods. Its dictionaries match the interface keys in that Harness version.
 
 The `.few` and `.many` plural categories require a `LocaleRuntime` version with extended CLDR support. Other translations remain available on earlier versions through the standard `.one` and `.other` keys.
 
@@ -95,9 +100,9 @@ pnpm install
 pnpm run check
 ```
 
-`pnpm run check` builds the package, verifies registration of all 48 dictionaries, and inspects the npm archive. Commit updated `lib/index.js` and `lib/client.js` together with source changes so GitHub installations do not need to run a local build.
+`pnpm run check` builds the package, verifies registration of all 50 dictionaries, and inspects the npm archive. Commit updated `lib/index.js` and `lib/client.js` together with source changes so GitHub installations do not need to run a local build.
 
-The full compatibility check needs a DeepSeek Harness `0.1.6-alpha.2` checkout:
+The full compatibility check needs a DeepSeek Harness `0.2.0-rc.2` checkout:
 
 ```sh
 DSH_HARNESS_ROOT=/path/to/deepseek-harness pnpm run check:harness
