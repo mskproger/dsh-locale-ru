@@ -9,17 +9,17 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![DeepSeek Harness](https://img.shields.io/badge/DeepSeek_Harness-0.2.0--rc.2-blue)](https://github.com/deepseek-ai/deepseek-harness)
-[![Check](https://github.com/AbsoluteMikhail/dsh-locale-ru/actions/workflows/check.yml/badge.svg)](https://github.com/AbsoluteMikhail/dsh-locale-ru/actions/workflows/check.yml)
+[![Check](https://github.com/mskproger/dsh-locale-ru/actions/workflows/check.yml/badge.svg)](https://github.com/mskproger/dsh-locale-ru/actions/workflows/check.yml)
 
 [English](README.en.md)
 
 `dsh-locale-ru` добавляет язык **Русский** в штатный переключатель DeepSeek Harness и переводит основные поверхности веб-интерфейса. Пакет использует публичный API языковых пакетов, не подменяет внутренние методы приложения и не изменяет DOM после отрисовки.
 
-**Автор и сопровождающий:** [AbsoluteMikhail](https://github.com/AbsoluteMikhail)
+**Пакет:** `@mskproger/dsh-locale-ru` · **Автор и сопровождающий форка:** [mskproger](https://github.com/mskproger) · **Оригинальный автор:** [AbsoluteMikhail](https://github.com/AbsoluteMikhail)
 
 ## Возможности
 
-- 50 пространств перевода и более 2300 строк интерфейса.
+- 60 пространств перевода и более 2300 строк интерфейса.
 - Чат, настройки, рабочие области, плагины, разрешения, терминал, файлы, планы, задания, субагенты и служебные панели.
 - Мгновенное переключение языка через **Настройки → Общие настройки → Язык**.
 - Сохранение выбранного языка в штатных настройках профиля.
@@ -33,7 +33,7 @@
 flowchart LR
     A[Профиль DSH] --> B[Bundle dsh-locale-ru]
     B --> C[Язык ru]
-    B --> D[48 словарей]
+    B --> D[60 словарей]
     C --> E[Штатный LocaleRuntime]
     D --> E
     E --> F[Русский Web UI]
@@ -44,7 +44,7 @@ flowchart LR
 ### Из GitHub
 
 ```sh
-dsh plugin --profile web add github:AbsoluteMikhail/dsh-locale-ru
+dsh plugin --profile web add github:mskproger/dsh-locale-ru
 ```
 
 Собранные файлы `lib/` хранятся в репозитории. Установка из GitHub не запускает сборочный код на компьютере пользователя и не требует разрешать install-скрипты.
@@ -53,18 +53,14 @@ dsh plugin --profile web add github:AbsoluteMikhail/dsh-locale-ru
 
 ### Из npm
 
-Команда станет доступна после публикации пакета `@absolutemikhail/dsh-locale-ru`:
-
-```sh
-dsh plugin --profile web add @absolutemikhail/dsh-locale-ru
-```
+Пакет распространяется только через GitHub — в npm он не публикуется. Устанавливайте командой выше или из интерфейса.
 
 ### Через интерфейс
 
 Откройте **Плагины → Добавить плагин** и вставьте:
 
 ```text
-github:AbsoluteMikhail/dsh-locale-ru
+github:mskproger/dsh-locale-ru
 ```
 
 ## Проверка установки
@@ -77,7 +73,7 @@ dsh --profile web --dump-config
 
 ```yaml
 - id: locale-ru
-  name: '@absolutemikhail/dsh-locale-ru'
+  name: '@mskproger/dsh-locale-ru'
 ```
 
 ## Что переводится
@@ -117,14 +113,14 @@ dsh --profile web --dump-config
 ## Обновление и удаление
 
 ```sh
-dsh plugin --profile web update @absolutemikhail/dsh-locale-ru
-dsh plugin --profile web remove @absolutemikhail/dsh-locale-ru
+dsh plugin --profile web update @mskproger/dsh-locale-ru
+dsh plugin --profile web remove @mskproger/dsh-locale-ru
 ```
 
 Для GitHub-установки можно закрепить конкретный тег:
 
 ```sh
-dsh plugin --profile web add github:AbsoluteMikhail/dsh-locale-ru#v0.1.0
+dsh plugin --profile web add github:mskproger/dsh-locale-ru#v0.1.0
 ```
 
 ## Разработка
@@ -136,9 +132,9 @@ pnpm install
 pnpm run check
 ```
 
-`pnpm run check` выполняет сборку, проверяет регистрацию всех 48 словарей и содержимое npm-архива. После изменения исходников добавьте обновлённые `lib/index.js` и `lib/client.js` в тот же коммит: благодаря этому установка из GitHub остаётся безопасной и не запускает локальную сборку.
+`pnpm run check` выполняет сборку, проверяет регистрацию всех 60 словарей и содержимое npm-архива. После изменения исходников добавьте обновлённые `lib/index.js` и `lib/client.js` в тот же коммит: благодаря этому установка из GitHub остаётся безопасной и не запускает локальную сборку.
 
-Полная проверка совместимости требует checkout DeepSeek Harness `0.1.6-alpha.2`:
+Полная проверка совместимости требует checkout DeepSeek Harness `0.2.0-rc.2`:
 
 ```sh
 DSH_HARNESS_ROOT=/path/to/deepseek-harness pnpm run check:harness
@@ -148,11 +144,11 @@ DSH_HARNESS_ROOT=/path/to/deepseek-harness pnpm run check:harness
 
 ## Обратная связь
 
-Нашли неточный перевод или непререведённую строку — [создайте issue](https://github.com/AbsoluteMikhail/dsh-locale-ru/issues). Укажите экран, исходный текст и желаемый вариант перевода.
+Нашли неточный перевод или непререведённую строку — [создайте issue](https://github.com/mskproger/dsh-locale-ru/issues). Укажите экран, исходный текст и желаемый вариант перевода.
 
 ## Авторство и лицензия
 
-Русская локализация и код этого пакета созданы и сопровождаются **AbsoluteMikhail** и распространяются по лицензии [MIT](LICENSE).
+Русская локализация и код этого пакета созданы **AbsoluteMikhail** и распространяются по лицензии [MIT](LICENSE). Форк `@mskproger/dsh-locale-ru` сопровождает **mskproger**; исходное авторство и лицензия сохранены.
 
 DeepSeek Harness — отдельный проект компании DeepSeek. Исходное уведомление об авторских правах и лицензии сохранено в [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Этот репозиторий является независимым проектом сообщества и не заявляет об официальной поддержке со стороны DeepSeek.
 

@@ -1,17 +1,21 @@
 {
-  "name": "@absolutemikhail/dsh-locale-ru",
+  "name": "@mskproger/dsh-locale-ru",
   "version": "0.1.0",
-  "description": "Russian locale bundle for the DeepSeek Harness web interface",
+  "description": "Russian locale bundle for the DeepSeek Harness web interface. Fork of AbsoluteMikhail/dsh-locale-ru, updated for Harness 0.2.0-rc.2 and maintained by mskproger.",
+  "icon": "icon.svg",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./locale/*": "./locale/*"
   },
   "files": [
     "lib/index.js",
     "lib/client.js",
+    "locale",
+    "icon.svg",
     "cordis.patch.yml",
     "README.md",
     "README.en.md",
@@ -48,17 +52,23 @@
     "ru"
   ],
   "author": {
-    "name": "AbsoluteMikhail",
-    "url": "https://github.com/AbsoluteMikhail"
+    "name": "mskproger",
+    "url": "https://github.com/mskproger"
   },
+  "contributors": [
+    {
+      "name": "AbsoluteMikhail",
+      "url": "https://github.com/AbsoluteMikhail"
+    }
+  ],
   "license": "MIT",
-  "homepage": "https://github.com/AbsoluteMikhail/dsh-locale-ru#readme",
+  "homepage": "https://github.com/mskproger/dsh-locale-ru#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AbsoluteMikhail/dsh-locale-ru.git"
+    "url": "git+https://github.com/mskproger/dsh-locale-ru.git"
   },
   "bugs": {
-    "url": "https://github.com/AbsoluteMikhail/dsh-locale-ru/issues"
+    "url": "https://github.com/mskproger/dsh-locale-ru/issues"
   },
   "engines": {
     "node": "^22.19.0 || >=24.0.0"

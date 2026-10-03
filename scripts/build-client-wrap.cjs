@@ -3,7 +3,7 @@
 'use strict';
 const fs = require('fs');
 
-const PACKAGE_ID = '@absolutemikhail/dsh-locale-ru';
+const PACKAGE_ID = '@mskproger/dsh-locale-ru';
 const raw = fs.readFileSync('lib/client.raw.js', 'utf8');
 const lines = raw.trimEnd().split('\n');
 if (lines[0]?.trim() === '"use strict";') lines.shift();

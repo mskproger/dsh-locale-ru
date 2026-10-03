@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 
-const PACKAGE_ID = '@absolutemikhail/dsh-locale-ru'
+const PACKAGE_ID = '@mskproger/dsh-locale-ru'
 let definition
 globalThis.window = {
   __ModuleLoader__: {
@@ -54,6 +54,6 @@ assert.equal(typeof host.apply, 'function')
 host.apply()
 
 const patch = await readFile(new URL('../cordis.patch.yml', import.meta.url), 'utf8')
-assert.match(patch, /id: locale-ru\s+name: '@absolutemikhail\/dsh-locale-ru'/)
+assert.match(patch, /id: locale-ru\s+name: '@mskproger\/dsh-locale-ru'/)
 
 console.log(`verified ${dictionaries.size} Russian dictionaries and the installable bundle layer`)

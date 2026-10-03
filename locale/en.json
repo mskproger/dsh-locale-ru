@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Russian Locale (RU)",
+    "description": "Russian localization for the DeepSeek Harness web interface — agent step statuses, settings, plugin manager, schedules and voice input, all in Russian. Fork of AbsoluteMikhail/dsh-locale-ru, updated for DSH 0.2.0-rc.2."
+  }
+}

@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import { build } from 'esbuild'
 
-const PACKAGE_ID = '@absolutemikhail/dsh-locale-ru'
+const PACKAGE_ID = '@mskproger/dsh-locale-ru'
 
 await mkdir('lib', { recursive: true })
 

@@ -3,7 +3,7 @@
 
 - insert:
     - id: locale-ru
-      name: '@absolutemikhail/dsh-locale-ru'
+      name: '@mskproger/dsh-locale-ru'
 
 # This row mirrors the built-in permission preset table. Keep its ids and
 # security settings aligned with the DeepSeek Harness base profile.

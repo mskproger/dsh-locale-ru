@@ -4,22 +4,22 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![DeepSeek Harness](https://img.shields.io/badge/DeepSeek_Harness-0.2.0--rc.2-blue)](https://github.com/deepseek-ai/deepseek-harness)
-[![Check](https://github.com/AbsoluteMikhail/dsh-locale-ru/actions/workflows/check.yml/badge.svg)](https://github.com/AbsoluteMikhail/dsh-locale-ru/actions/workflows/check.yml)
+[![Check](https://github.com/mskproger/dsh-locale-ru/actions/workflows/check.yml/badge.svg)](https://github.com/mskproger/dsh-locale-ru/actions/workflows/check.yml)
 
 [Русский](README.md)
 
-> **mskproger/dsh-locale-ru fork**, updated for DeepSeek Harness **0.2.0-rc.2**: all 50 dictionaries
+> **mskproger/dsh-locale-ru fork**, updated for DeepSeek Harness **0.2.0-rc.2**: all 60 dictionaries
 > completed (including the agent activity statuses `message.stepProcess.*`) and two new
 > dictionaries added — `schedule.manager` and `voice-input`. Based on
 > [AbsoluteMikhail/dsh-locale-ru](https://github.com/AbsoluteMikhail/dsh-locale-ru) (MIT).
 
 `dsh-locale-ru` adds **Русский** to the built-in DeepSeek Harness language selector and translates the main web interface surfaces. It uses the public locale-pack API without replacing application internals or rewriting the rendered DOM.
 
-**Author and maintainer:** [AbsoluteMikhail](https://github.com/AbsoluteMikhail)
+**Package:** `@mskproger/dsh-locale-ru` · **Fork author and maintainer:** [mskproger](https://github.com/mskproger) · **Original author:** [AbsoluteMikhail](https://github.com/AbsoluteMikhail)
 
 ## Features
 
-- 50 translation namespaces and more than 2,300 interface strings.
+- 60 translation namespaces and more than 2,300 interface strings.
 - Coverage for chat, settings, workspaces, plugins, permissions, terminal, files, plans, jobs, subagents, and utility panels.
 - Immediate switching through **Settings → General settings → Language**.
 - Persistence through the standard profile settings.
@@ -34,7 +34,7 @@
 ### From GitHub
 
 ```sh
-dsh plugin --profile web add github:AbsoluteMikhail/dsh-locale-ru
+dsh plugin --profile web add github:mskproger/dsh-locale-ru
 ```
 
 The compiled `lib/` files are committed to the repository. Installing from GitHub does not execute build code on the user's computer and does not require install-script approval.
@@ -43,18 +43,14 @@ Restart the profile, open **Settings → General settings → Language**, and se
 
 ### From npm
 
-This command will become available after `@absolutemikhail/dsh-locale-ru` is published:
-
-```sh
-dsh plugin --profile web add @absolutemikhail/dsh-locale-ru
-```
+The package ships through GitHub only — it is not published to npm. Use the command above or install it from the interface.
 
 ### From the interface
 
 Open **Plugins → Add plugin** and enter:
 
 ```text
-github:AbsoluteMikhail/dsh-locale-ru
+github:mskproger/dsh-locale-ru
 ```
 
 ## Verify the installation
@@ -67,7 +63,7 @@ The assembled configuration should contain:
 
 ```yaml
 - id: locale-ru
-  name: '@absolutemikhail/dsh-locale-ru'
+  name: '@mskproger/dsh-locale-ru'
 ```
 
 ## Compatibility
@@ -81,14 +77,14 @@ Harness updates may add or rename interface keys. A matching locale release shou
 ## Update or remove
 
 ```sh
-dsh plugin --profile web update @absolutemikhail/dsh-locale-ru
-dsh plugin --profile web remove @absolutemikhail/dsh-locale-ru
+dsh plugin --profile web update @mskproger/dsh-locale-ru
+dsh plugin --profile web remove @mskproger/dsh-locale-ru
 ```
 
 You can pin a GitHub installation to a release tag:
 
 ```sh
-dsh plugin --profile web add github:AbsoluteMikhail/dsh-locale-ru#v0.1.0
+dsh plugin --profile web add github:mskproger/dsh-locale-ru#v0.1.0
 ```
 
 ## Development
@@ -100,7 +96,7 @@ pnpm install
 pnpm run check
 ```
 
-`pnpm run check` builds the package, verifies registration of all 50 dictionaries, and inspects the npm archive. Commit updated `lib/index.js` and `lib/client.js` together with source changes so GitHub installations do not need to run a local build.
+`pnpm run check` builds the package, verifies registration of all 60 dictionaries, and inspects the npm archive. Commit updated `lib/index.js` and `lib/client.js` together with source changes so GitHub installations do not need to run a local build.
 
 The full compatibility check needs a DeepSeek Harness `0.2.0-rc.2` checkout:
 
@@ -112,11 +108,11 @@ This command compares every dictionary's keys, order, and placeholders with the 
 
 ## Feedback
 
-If you find an inaccurate translation or an untranslated string, [open an issue](https://github.com/AbsoluteMikhail/dsh-locale-ru/issues) with the screen, source text, and suggested wording.
+If you find an inaccurate translation or an untranslated string, [open an issue](https://github.com/mskproger/dsh-locale-ru/issues) with the screen, source text, and suggested wording.
 
 ## Authorship and license
 
-The Russian localization and package code are authored and maintained by **AbsoluteMikhail** and released under the [MIT License](LICENSE).
+The Russian localization and package code are authored by **AbsoluteMikhail** and released under the [MIT License](LICENSE). The `@mskproger/dsh-locale-ru` fork is maintained by **mskproger**; the original authorship and license are preserved.
 
 DeepSeek Harness is a separate DeepSeek project. Its original copyright and license notice are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). This repository is an independent community project and does not claim official endorsement by DeepSeek.
 
